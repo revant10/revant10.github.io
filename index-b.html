@@ -21,52 +21,46 @@
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+
+    <link rel="stylesheet" href="style-b.css">
     <title>Revant Kansara</title>
+
+    
 </head>
 <body>
-    
-    
-    <div class="header">
-        <!-- <div id="btn"><i class="fa fa-bars"></i></div>
-        <ul>
-            <li><a href="#">ABOUT</a>
-            <li><a href="#">SKILLS</a>
-            <li><a href="#">CONTACT ME</a>
-        </ul> -->
-    </div>
 
-    <!-- <div class="main">
+    <div class="header">
         <nav>
-            <div class="circle">
-                <img src="logow.png" alt="">
+            <ul>
+                <li><a href="index.html"><img src="logow.png" alt="logo"></a></li>
+                <li style="font-size: 2em; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold;">Revant Kansara</li>
+                <!-- <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PROFILE</a></li>
+                <li><a href="#">CONTACT</a></li> -->
+            </ul>
+            <div class="switch">
+                <i onclick="myFunction(this)" class="fa fa-sun-o"></i>
             </div>
         </nav>
-        <div class="content">
-            <h1>Site Under Development</h1>
-            
-            
-        </div>
-    </div> -->
+    </div>
 
-    <!-- <script>
-        const btn = document.querySelector('#btn');
-        const header = document.querySelector('.header');
-        btn.addEventListener('click', ()=>{
-            var htop = header.computedStyleMap().get('top').value;
-            console.log(htop);
-            if(htop == '-140')
-            {
-                header.style.top = '0px';
-            }
-            else
-            {
-                header.style.top = '-140px';
-            }
-        });
-    </script> -->
-
+    <div class="card">
+        <h1 class="name"> 
+           Updating <i class="fa fa-spinner fa-spin"></i>
+        </h1>
+        <hr style="margin: auto; width: 80%;">
+        <p class="desc"> &lt;&#47;&gt; This webpage is under design &amp; development phase... &lt;&#47;&gt;</p>
+    </div>
+    
+    <script>
+        function myFunction(x)
+        {
+            x.classList.toggle("fa-moon-o");
+        }
+    </script>
 </body>
 </html>

@@ -7,23 +7,20 @@
 body
 {
     overflow: auto;
-    background-color: #999;
-}
-
-h1
-{
-    text-align: center;
+    background-color: #aaa;
+    align-items: center;
 }
 
 .header
 {
     margin: auto;
     width: 100%;
-    height: 80px;
+    height: auto;
     background: #aaa;
-    position: relative;
+    position: sticky;
+    top: 0;
     align-items: center;
-    border-radius: 0 0 50px 50px;
+    border-radius: 0px 0px 50px 50px;
     transition: all 0.5s;
 }
 
@@ -35,7 +32,7 @@ h1
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 0 0 50px 50px;
+    border-radius: 0px 0px 50px 50px;
     background: linear-gradient(45deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff000069);
     z-index: -1;
     transform: scale(1);
@@ -54,83 +51,164 @@ h1
     filter: blur(10px);
 }
 
-/* #btn
-{
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%);
-    outline: none;
-    cursor: pointer;
-    color: #fff;
-}
-
-#btn::before
-{
-    font-weight: 900;
-    color: #f1f1c1;
-}
-
-ul
-{
-    color: rgb(95, 95, 95);
-    font-weight: 700;
-    font-family: cursive;
-    text-decoration: none;
-}
-
-ul li
-{
-    display: inline-block;
-}
-
-ul li a
-{
-    text-decoration: none;
-    
-    color: #eee;
-}
-
-a:hover
-{
-    color: #f1f1f196;
-}
-
-ul li a
-{
-    margin: 10px;   
-} */
-
-/* .main
-{
-    top: 0;
-    position: absolute;
-    z-index: -2;
-    width: 100%;
-    overflow-y: scroll;
-}
-
 nav
 {
-    color: #eee;
-    background-color: #333333;
-    width: 100%;
-    height: 100px;
-    padding-top: 80px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0px 0px 50px 50px;
+
 }
 
-.circle img
+nav ul li
 {
-    position: relative;
-    left: 20px;
-    height: 78px;
-    width: 78px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    margin-left: 2px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+nav ul li a:hover
+{
+    color: #aaa;
+}
+
+nav img
+{
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    margin-left: 10px;
 }
 
-.main .content
+.card
 {
-    position: relative;
-    color: #111;
-} */
+    width: 98%;
+    height: 500px;
+    align-items: center;
+    margin: auto;
+    margin-top: 2%;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #111;
+    background-color: #333;
+    text-align: center;
+    color: #eee;
+}
+
+.card .name
+{
+    padding: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+}
+
+.desc
+{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+
+/* Rounded sliders */
+
+.check
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+    position: absolute;
+    right: 100px;
+    top: 20px;
+}
+
+.switch
+{
+    width: 50px;
+    height: 22px;
+    border-radius: 11px;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.switch input
+{ 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider
+{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #aaa;
+    -webkit-transition: .4s;
+    transition: .4s;
+    content: "\f093";
+}
+
+.slider:before
+{
+    position: absolute;
+    content: "\f093";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider
+{
+    background-color: #1670b9;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #1670b9;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round 
+{
+    border-radius: 34px;
+}
+
+.slider.round:before
+{
+    border-radius: 50%;
+}
+
+.fa
+{
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+  
+.fa:hover
+{
+    color: #ccc;
+}

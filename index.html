@@ -21,8 +21,10 @@
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
     <link rel="stylesheet" href="style.css">
     <title>Revant Kansara</title>
@@ -41,28 +43,64 @@
                 <li><a href="#">CONTACT</a></li> -->
             </ul>
             <div class="check">
-                <label class="switch"></label>
-                    <!-- <input type="checkbox">
-                    <span class="slider round"></span> -->
-                    
-                </label>
+                <i onclick="darkMode()" class="fa fa-sun-o" id="icon"></i>
             </div>
         </nav>
     </div>
 
     <div class="card">
         <h1 class="name"> 
-           I'm still developing this page <i class="fa fa-spinner fa-spin"></i>
+           Updating <i class="fa fa-refresh fa-spin"></i>
         </h1>
-        <hr style="margin: auto; width: 80%;">
-        <p class="desc"> &lt;&#47;&gt; This webpage is under design &amp; development phase... &lt;&#47;&gt;</p>
+        <hr style="margin: auto; width: 90vw;">
+        <p class="desc"> This webpage is under design &amp; development phase...
     </div>
-    <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
+    <footer>
+        <p class="bars" id="btn"><i class="fa fa-bars"></i></p>
+        <div class="f-content-left">
+            
+            <!-- <p class="contact-head">Get Connected</p> -->
+            <p id="name">Revant Kansara</p>
+            <p><i class="fas fa-at"></i> <a href="mailto:revantkansara01@gmail.com">revantkansara01@gmail.com</a></p>
+            <p><i class="fas fa-map-marker-alt"></i> Palghar, Maharashtra, INDIA</p>
+        </div>
+        <div class="f-content-right">
+            <ul>
+                <li><a href="https://www.instagram.com/revant.10/" target="_blank"><i class="fab fa-instagram insta"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/revantkansara/" target="_blank"><i class="fab fa-linkedin linkedin"></i></a></li>
+                <li><a href="https://www.github.com/revant10/" target="_blank"><i class="fab fa-github github"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    
     <script>
-        function myFunction(x)
+        function darkMode()
         {
-            x.classList.toggle("fa fa-thumbs-down");
+            var x = document.getElementById("icon");
+            x.classList.toggle("fa-moon-o");
+            var element = document.body;
+            element.classList.toggle('body-dark');
+            var card = document.getElementsByClassName("card")[0];
+            card.classList.toggle("card-dark");
         }
+    </script>
+
+    <script>
+        const btn = document.querySelector("#btn");
+        const footer = document.querySelector("footer");
+        btn.addEventListener("click", ()=>{
+            var hbottom = footer.computedStyleMap().get('bottom').value;
+            console.log(hbottom);
+            if(hbottom == "-130")
+            {
+                footer.style.bottom = "0px";
+            }
+            else
+            {
+                footer.style.bottom = "-130px";
+            }
+        });
     </script>
 </body>
 </html>
