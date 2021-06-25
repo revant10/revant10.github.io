@@ -43,7 +43,7 @@
                 <li><a href="#">CONTACT</a></li> -->
             </ul>
             <div class="check">
-                <i onclick="darkMode()" class="fa fa-sun-o" id="icon"></i>
+                <i onclick="darkMode()" class="fas fa-sun" style="color:#ccc" id="icon"></i>
             </div>
         </nav>
     </div>
@@ -57,7 +57,7 @@
     </div>
 
     <footer>
-        <p class="bars" id="btn"><i class="fa fa-bars"></i></p>
+        <p class="bars" id="btn"><i id="env" class="fa fa-envelope"></i></p>
         <div class="f-content-left">
             
             <!-- <p class="contact-head">Get Connected</p> -->
@@ -78,12 +78,13 @@
         function darkMode()
         {
             var x = document.getElementById("icon");
-            x.classList.toggle("fa-moon-o");
+            x.styleList.toggle("color:#fff");
             var element = document.body;
             element.classList.toggle('body-dark');
             var card = document.getElementsByClassName("card")[0];
             card.classList.toggle("card-dark");
         }
+
     </script>
 
     <script>
@@ -92,6 +93,8 @@
         btn.addEventListener("click", ()=>{
             var hbottom = footer.computedStyleMap().get('bottom').value;
             console.log(hbottom);
+            var e = document.getElementById("env");
+            e.classList.toggle("fa-envelope-open");
             if(hbottom == "-130")
             {
                 footer.style.bottom = "0px";
