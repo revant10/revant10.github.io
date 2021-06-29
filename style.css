@@ -2,28 +2,27 @@
 {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body
 {
     background: #000;
+    padding: 0;
+    margin: 0;
 }
 
 header
 {
-    /* The image used */
     background-image: url("img/IMG_8608.jpg");
-
-    /* Set a specific height */
     min-height: 100vh; 
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    height: 10vh;
+    margin: 0;
+    top: 0;
 }
 
 .bg-h
@@ -40,26 +39,13 @@ header
     height: 100vh;
 }
 
-.img-me
-{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
-    border-radius: 50%;
-    height: 19vw;
-    width: 19vw;
-    box-shadow: 0 0 30px #000;
-}
-
 .name-h
 {
-    top: 70%;
+    top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    font-size: 7vw;
+    font-size: 10vw;
     color: #fff;
     text-shadow: 0 0 10px #000;
 }
@@ -69,32 +55,41 @@ header
     height: 1000px;
 }
 
+.scroll
+{
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    color: #fff;
+    cursor: pointer;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+}
+
+.arrow
+{
+    font-size: 3vw;
+    transform: rotate(-90deg);
+}
+
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(15px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1;}
+}
+
 @media screen and (max-width: 800px)
 {
-    .img-me
-    {
-        height: 35vh;
-        width: 35vh;
-    }
-    
-    .name-h
-    {
-        font-size: 10vh;
-    }
+    /* .name-h{font-size: 10vh;} */
+    .arrow{font-size: 5vh;}
 }
 
 @media screen and (max-height: 500px)
 {
-    .img-me
-    {
-        top: 35%;
-        height: 30vw;
-        width: 30vw;
-    }
-    
-    .name-h
-    {
-        top: 75%;
-        font-size: 7vw;
-    }
+    /* .name-h{top: 50%; font-size: 10vw;} */
+    .arrow{font-size: 5vh;}
 }
