@@ -5,10 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -30,7 +49,7 @@
         </div>
     </header>
     
-    <div class="main">
+    <div class="main" id="main">
         
         <nav class="navbar navbar-inverse" id="home" style="position: sticky; top: 0;">
             <div class="container-fluid">
@@ -40,25 +59,51 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand" href="#" style="color: #fff; font-size: 18px;">WebSiteName</a>
+                    <a class="navbar-brand" href="#">
+                        <img src="img/l1.png" alt="">
+                    </a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Academics</a></li>
                         <li><a href="#">Certifications</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
         </nav>
         
-        <div style="height:1000px;background-color:#ccc;font-size:36px">
-            Scroll Up and Down this page to see the parallax scrolling effect.
-            This div is just here to enable scrolling.
-            Tip: Try to remove the background-attachment property to remove the scrolling effect.
+        <div style="height:1000px; font-size:5vh; text-align: center;">
+            <br>
+            <br>
+            <br>
+            LOADING SOON ;)
+            <br>
+            ^_^
         </div>
     </div>
+    <div class="float-b" id="float-b" onclick="dark()">
+        <span class="float-i" id="float-i">&#9728;</span>
+    </div>
+
+    <script>
+        // float button for Dark Mode
+
+        
+        function dark()
+        {
+            var b = document.getElementById('float-b');
+            var i = document.getElementById('float-i');
+            var m = document.getElementById('main');
+            b.classList.toggle('float-b-d');
+            i.classList.toggle('float-i-d');
+            m.classList.toggle('main-dark');
+        }
+    </script>
 
 </body>
 </html>
