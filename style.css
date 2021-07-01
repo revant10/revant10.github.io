@@ -2,12 +2,13 @@
 {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
+    color: #fff;
+    /* scroll-behavior: smooth; */
 }
 
 body
 {
-    /* background: #000; */
+    background: #111111;
     padding: 0;
     margin: 0;
 }
@@ -52,7 +53,10 @@ header
 
 .navbar
 {
+    position: sticky;
+    top: 0;
     border-radius: 0;
+    z-index: 1000;
 }
 
 .progress-container
@@ -68,15 +72,7 @@ header
     width: 0%;
 }
 
-.main
-{
-    height: 1000px;
-}
 
-.main-dark
-{
-    background-color: #000;
-}
 
 .scroll
 {
@@ -154,6 +150,50 @@ header
     color: #fff;
 }
 
+.main
+{
+    padding: 10px;
+}
+
+.main-dark
+{
+    background-color: #000;
+}
+
+.row
+{
+    padding: 5px;
+    background-color: rgb(200, 200, 200, 0.1);
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.card
+{
+    border-radius: 20px;
+    padding: 25px;
+    
+}
+
+.card-c
+{
+    text-align: center;
+}
+
+.about
+{
+    min-height: 50vh;
+}
+
+.img-me
+{
+    border: 1px dashed #000;
+    border-radius: 50%;
+    height: 15vw;
+    width: 15vw;
+    background-color: #fff;
+}
+
 
 @keyframes scroll {
   0% { opacity: 0; }
@@ -167,6 +207,7 @@ header
     .arrow{font-size: 5vh;}
     .navbar-brand img{height: 5vh; width: 5vh;}
     .float-b, .float-b-d{height: 5vh; width: 5vh;}
+    .img-me{height: 20vh; width: 20vh;}
 }
 
 @media screen and (max-width: 500px)
@@ -176,4 +217,5 @@ header
     .navbar-brand img{height: 5vh; width: 5vh;}
     .float-b, .float-b-d{height: 5vh; width: 5vh;}
     .float-i, .float-i-d{font-size: 4vh;}
+    .img-me{height: 20vh; width: 20vh;}
 }
