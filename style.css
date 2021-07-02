@@ -172,12 +172,13 @@ header
 {
     border-radius: 20px;
     padding: 25px;
-    
 }
+
 
 .card-c
 {
     text-align: center;
+    padding: 10px;
 }
 
 .about
@@ -194,6 +195,73 @@ header
     background-color: #fff;
 }
 
+.fa-wifi
+{
+    transform: rotate(45deg);
+    color: #0e76a8;
+}
+
+.contact p
+{
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    color: #fff;
+}
+
+.contact p a
+{
+    color: #fff;
+}
+
+.contact p a:hover
+{
+    color: #aaa;
+}
+
+#name
+{
+    font-size: 2em;
+}
+
+.social
+{
+    text-align: center;
+    font-size: 2em;
+}
+
+.social ul
+{
+    list-style-type: none;
+}
+
+.social ul li
+{
+    display: inline;
+    margin: 10px;
+}
+
+.github:hover
+{
+    background: -webkit-linear-gradient(#6cc644, #6cc644);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.linkedin:hover
+{
+    background: -webkit-linear-gradient(#0e76a8, #0e76a8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.insta:hover
+{
+    background: (#d6249f);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 @keyframes scroll {
   0% { opacity: 0; }
@@ -208,6 +276,28 @@ header
     .navbar-brand img{height: 5vh; width: 5vh;}
     .float-b, .float-b-d{height: 5vh; width: 5vh;}
     .img-me{height: 20vh; width: 20vh;}
+
+    .github
+    {
+        background: -webkit-linear-gradient(#6cc644, #6cc644);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .linkedin
+    {
+        background: -webkit-linear-gradient(#0e76a8, #0e76a8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .insta
+    {
+        background: (#d6249f);
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 @media screen and (max-width: 500px)
@@ -218,4 +308,31 @@ header
     .float-b, .float-b-d{height: 5vh; width: 5vh;}
     .float-i, .float-i-d{font-size: 4vh;}
     .img-me{height: 20vh; width: 20vh;}
+
+    .github
+    {
+        background: -webkit-linear-gradient(#6cc644, #6cc644);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .linkedin
+    {
+        background: -webkit-linear-gradient(#0e76a8, #0e76a8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .insta
+    {
+        background: (#d6249f);
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .emt{display: none;}
 }

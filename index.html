@@ -32,6 +32,7 @@
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="script.js"></script>
 
     <title>Revant Kansara</title>
@@ -63,10 +64,10 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Certifications</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certi">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -79,41 +80,64 @@
         <div class="container-fluid">
             <div style="height: 12vh;"></div>
             <div class="row about">
-              <div class="col-lg-4 card card-c">
-                <img src="img/me.png" alt="Revant Kansara" class="img-me">
-              </div>
-              
-              <div class="col-lg-4 card">
-                <h1>Revant Kansara</h1>
-                <h3>IT Fresher</h3>
-              </div>
+                <div class="col-lg-4 card card-c">
+                    <img src="img/me.png" alt="Revant Kansara" class="img-me">
+                </div>
+                
+                <div class="col-lg-4 card">
+                    <h1>Revant Kansara</h1>
+                    <h3>IT Fresher</h3>
+                </div>
 
-              <div class="col-lg-4 card">
-                <ul>
-                    <h3><li>2021</li></h3>
-                    <p>BE IT Mumbai University</p>
+                <div class="col-lg-4 card">
+                    <ul>
+                        <h3><li>2021</li></h3>
+                        <p>BE IT Mumbai University</p>
 
-                    <h3><li>2017</li></h3>
-                    <p>XII Maharashtra State Board</p>
+                        <h3><li>2017</li></h3>
+                        <p>XII Maharashtra State Board</p>
 
-                    <h3><li>2015</li></h3>
-                    <p>X Maharashtra State Board</p>
-                </ul>
-              </div>
+                        <h3><li>2015</li></h3>
+                        <p>X Maharashtra State Board</p>
+                    </ul>
+                </div>
             </div>
-            <div class="row">
-              <div class="col-lg-4 card">A</div>
-              
-              <div class="col-lg-4 card">B</div>
-              
-              <div class="col-lg-4 card">C</div>
+            <div class="row contact" id="contact">
+                <div class="col-lg-12 card-c">
+                    <h3>
+                        Get Connected..
+                        <i class="fa fa-wifi"></i>
+                    </h3>
+                    <hr>
+                </div>
+                <div class="col-lg-4 col-md-12 col-xs-12 card-c">
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> 
+                        Palghar, Maharashtra, INDIA
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-xs-12 card-c">
+                    <p>
+                        <i id="env" class="fa fa-envelope"></i>
+                        <a href="mailto:revantkansara01@gmail.com">revantkansara01@gmail.com</a>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-xs-12 card-c social">
+                    <ul>
+                        <li><a href="https://www.instagram.com/revant.10/" target="_blank"><i class="fab fa-instagram insta"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/revantkansara/" target="_blank"><i class="fab fa-linkedin linkedin"></i></a></li>
+                        <li><a href="https://www.github.com/revant10/" target="_blank"><i class="fab fa-github github"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="float-b" id="float-b" onclick="dark()">
+    <!-- <div class="float-b" id="float-b" onclick="dark()">
         <span class="float-i" id="float-i">&#9728;</span>
-    </div>
+    </div> -->
 
     <script>
         // float button for Dark Mode
