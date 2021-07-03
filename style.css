@@ -195,6 +195,32 @@ header
     background-color: #fff;
 }
 
+.certificates
+{
+    padding: 20px;
+}
+
+.carousel-inner .item img
+{
+    height: 30vw;
+    width: 40vw;
+    left: 50%;
+    transform: translate(70%, 0);
+}
+
+.carousel-control
+{
+    border-radius: 20px;
+    width: auto;
+}
+
+
+
+.c-title
+{
+    font-size: 22px;
+}
+
 .fa-wifi
 {
     transform: rotate(45deg);
@@ -276,6 +302,12 @@ header
     .navbar-brand img{height: 5vh; width: 5vh;}
     .float-b, .float-b-d{height: 5vh; width: 5vh;}
     .img-me{height: 20vh; width: 20vh;}
+    .carousel-inner .item img
+    {
+        height: 30vh;
+        width: 50vh;
+        transform: translate(0%, 0);
+    }
 
     .github
     {
@@ -330,9 +362,4 @@ header
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-}
-
-@media screen and (max-width: 1200px)
-{
-    .emt{display: none;}
 }
