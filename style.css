@@ -195,6 +195,28 @@ header
     background-color: #fff;
 }
 
+.projects
+{
+    padding: 10px;
+}
+
+.tech
+{
+    /* height: 110px;
+    width: 110px; */
+    /* padding: 5px; */
+    
+}
+
+.tech img
+{
+    height: 100px;
+    width: 100px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+
 .certificates
 {
     padding: 20px;
@@ -302,6 +324,7 @@ header
     .navbar-brand img{height: 5vh; width: 5vh;}
     .float-b, .float-b-d{height: 5vh; width: 5vh;}
     .img-me{height: 20vh; width: 20vh;}
+    .tech img{height: 70px; width: 70px;}
     .carousel-inner .item img
     {
         height: 30vh;
@@ -340,7 +363,7 @@ header
     .float-b, .float-b-d{height: 5vh; width: 5vh;}
     .float-i, .float-i-d{font-size: 4vh;}
     .img-me{height: 20vh; width: 20vh;}
-
+    .tech img{height: 70px; width: 70px;}
     .github
     {
         background: -webkit-linear-gradient(#6cc644, #6cc644);
