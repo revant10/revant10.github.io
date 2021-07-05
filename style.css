@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap');
+
 *
 {
     margin: 0;
@@ -172,6 +174,7 @@ header
 {
     border-radius: 20px;
     padding: 25px;
+    /* border: 1px solid #fff; */
 }
 
 
@@ -183,39 +186,68 @@ header
 
 .about
 {
-    min-height: 50vh;
+    /* min-height: 50vh; */
+    font-size: 20px;
+}
+
+.about h1
+{
+    font-size: 5rem;
+    font-family: 'Crimson Text', serif;
 }
 
 .img-me
 {
     border: 1px dashed #000;
-    border-radius: 50%;
-    height: 15vw;
-    width: 15vw;
+    border-radius: 10%;
+    height: 20vw;
+    width: 20vw;
     background-color: #fff;
 }
 
-.projects
+.timeline ul
 {
-    padding: 10px;
+    margin-left: 20px;
+}
+
+.timeline .year
+{
+    font-size: 24px;
+    font-style: italic;
+}
+
+.techStack
+{
+    padding: 20px;
+}
+
+.techTitle
+{
+    font-size: 3rem;
 }
 
 .tech
 {
-    /* height: 110px;
-    width: 110px; */
-    /* padding: 5px; */
-    
+    margin: 10px 0;
 }
 
 .tech img
 {
     height: 100px;
     width: 100px;
-    background-color: #ccc;
+    background-color: rgba(204, 204, 204, 1);
     border-radius: 10px;
 }
 
+.projectStack
+{
+    padding: 20px;
+}
+
+.projectTitle
+{
+    font-size: 3rem;
+}
 
 .certificates
 {
@@ -324,7 +356,7 @@ header
     .navbar-brand img{height: 5vh; width: 5vh;}
     .float-b, .float-b-d{height: 5vh; width: 5vh;}
     .img-me{height: 20vh; width: 20vh;}
-    .tech img{height: 70px; width: 70px;}
+    .tech img{height: 50px; width: 50px;}
     .carousel-inner .item img
     {
         height: 30vh;
@@ -363,7 +395,7 @@ header
     .float-b, .float-b-d{height: 5vh; width: 5vh;}
     .float-i, .float-i-d{font-size: 4vh;}
     .img-me{height: 20vh; width: 20vh;}
-    .tech img{height: 70px; width: 70px;}
+    .tech img{height: 50px; width: 50px;}
     .github
     {
         background: -webkit-linear-gradient(#6cc644, #6cc644);
