@@ -39,6 +39,12 @@
     <meta name="description" content="Revant Kansara'a Portfolio Website.">
 </head>
 <body>
+
+    <div id="overlay">
+        <div id="progstat"></div>
+        <div id="progress"></div>
+    </div>
+
     <header>
         <span class="name-h">
             <p class="typewrite" data-period="2000" 
@@ -66,8 +72,8 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#certi">Certifications</a></li>
+                    <li><a href="#main">About</a></li>
+                    <li><a href="#certificates">Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -89,7 +95,7 @@
                     <h1>Revant Kansara</h1>
                     <span class="subtitle">IT Fresher</span>
                     <hr>
-                    <p style="text-align: justify; text-justify: inter-word;">I am an Engineer, and yes I can help you with your computer, printer and router setup too. 
+                    <p style="text-align: justify; text-justify: inter-word;">I am an IT Engineer, and yes I can help you with your computer, printer and router setup too. 
                         I know a litte bit about <big>Ethical Hacking</big> too, but I won't hack an FB or Insta account for you; because it is <big>"Un-Ethical"</big>.</p>
                 </div>
 
@@ -104,6 +110,13 @@
                         <span class="year"><li>2015</li></span>
                         <p>X Maharashtra State Board</p>
                     </ul>
+                    
+                    <a href="Resume_Revant_Kansara.pdf" download="Resume_Revant_Kansara.pdf" target="_blank">
+                        <button class="resume">
+                            Resume
+                            <i class="fa fa-download"></i>
+                        </button>
+                    </a>
                 </div>
             </div>
 
@@ -157,6 +170,7 @@
                             Projects
                         </span>
                         <hr>
+                        
                     </center>
                 </div>
             </div>
@@ -165,21 +179,27 @@
             <div class="row certificates" id="certificates">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval='3000'>
 
-                    <div class="carousel-inner">
+                    <center>
+                        <div class="carousel-inner">
                         
-                        <div class="item active">
-                            <img src="cert/EHv1.jpg" alt="Los Angeles">
-                        </div>
-                
-                        <div class="item">
-                            <img src="cert/EHv1.jpg" alt="Chicago">
-                        </div>
-                
-                        <div class="item">
-                            <img src="cert/EHv1.jpg" alt="New york">
-                        </div>
+                            <div class="item active">
+                                <img src="cert/IT_Automation.png" alt="Google IT Automation with Python">
+                            </div>
+                    
+                            <div class="item">
+                                <img src="cert/IT_Support.png" alt="Google IT Support">
+                            </div>
+                    
+                            <div class="item">
+                                <img src="cert/EHv1.jpg" alt="Ethical Hacking">
+                            </div>
 
-                    </div>
+                            <div class="item">
+                                <img src="cert/NDG_Linux_Unhatched.png" alt="NDG Linux Unhatched">
+                            </div>
+    
+                        </div>
+                    </center>
                 
                     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>

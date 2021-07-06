@@ -15,6 +15,39 @@ body
     margin: 0;
 }
 
+#overlay
+{
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.9);
+    transition: 1s 0.4s;
+}
+
+#progress
+{
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    width: 0;
+    top: 50%;
+}
+
+#progstat
+{
+    font-size: 0.7em;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
 header
 {
     background-image: url("img/IMG_8608.jpg");
@@ -101,9 +134,9 @@ header
 {
     height: 2vw;
     width: 2vw;
-    position: absolute;
-    top: 50%;
-    transform: translate(-10%, -50%);
+    /* position: absolute; */
+    /* top: 50%;
+    transform: translate(-10%, -50%); */
 
 }
 
@@ -187,7 +220,7 @@ header
 .about
 {
     /* min-height: 50vh; */
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .about h1
@@ -198,7 +231,7 @@ header
 
 .img-me
 {
-    border: 1px dashed #000;
+    border: 1px solid #fff;
     border-radius: 10%;
     height: 20vw;
     width: 20vw;
@@ -214,6 +247,27 @@ header
 {
     font-size: 24px;
     font-style: italic;
+}
+
+.resume
+{
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #285AEB;
+    padding: 10px 16px;
+    color: #fff;
+    margin: 10px;
+}
+
+.resume:hover
+{
+    box-shadow: 0 0 5px #fff;
+    border: 2px solid #fff;
+}
+
+.fa-download
+{
+    color: #285AEB;
 }
 
 .techStack
@@ -233,10 +287,15 @@ header
 
 .tech img
 {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     background-color: rgba(204, 204, 204, 1);
     border-radius: 10px;
+}
+
+.tech img:hover
+{
+    box-shadow: 0 0 10px #fff;
 }
 
 .projectStack
@@ -258,8 +317,6 @@ header
 {
     height: 30vw;
     width: 40vw;
-    left: 50%;
-    transform: translate(70%, 0);
 }
 
 .carousel-control
@@ -361,7 +418,6 @@ header
     {
         height: 30vh;
         width: 50vh;
-        transform: translate(0%, 0);
     }
 
     .github
