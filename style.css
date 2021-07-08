@@ -218,15 +218,14 @@ header
     background-color: #fff;
 }
 
-.timeline ul
+.h-title
 {
-    margin-left: 20px;
+    margin-top: 20px;
 }
 
-.timeline .year
+.intro ul
 {
-    font-size: 24px;
-    font-style: italic;
+    margin: 10px 20px;
 }
 
 .resume
@@ -236,7 +235,7 @@ header
     border: 2px solid #285AEB;
     padding: 10px 16px;
     color: #fff;
-    margin: 10px;
+    margin-top: 20px;
 }
 
 .resume:hover
@@ -292,6 +291,7 @@ header
 .project
 {
     padding: 5px;
+    margin-top: 5px;
 }
 
 .p-img
@@ -300,6 +300,7 @@ header
     border-radius: 10px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.2);
+    min-height: 200px;
 }
 
 .p-img .p-title
