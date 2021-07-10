@@ -63,10 +63,10 @@ header
 {
     background-image: url("img/IMG_8608.jpg");
     min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
+    background-attachment: fixed !important;
+    background-position: center !important;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover !important;
     text-align: center;
 }
 
