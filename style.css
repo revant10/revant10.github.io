@@ -61,13 +61,18 @@ body
 
 header
 {
+    background-color: #000;
     background-image: url("img/IMG_8608.jpg");
     min-height: 100vh;
-    background-attachment: fixed !important;
-    background-position: center !important;
-    background-repeat: no-repeat;
-    background-size: cover !important;
     text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-atachment: fixed;
+    background-position: center !important;
+    background-size: cover !important;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 .scroll

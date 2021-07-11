@@ -1,3 +1,24 @@
+window.onload = function() {
+  var elements = document.getElementsByClassName('typewrite');
+  for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-type');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtType(elements[i], JSON.parse(toRotate), period);
+      }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+  document.body.appendChild(css);
+
+  if (platform['name'].includes("Safari"))
+  {
+    document.getElementById('home').style.backgroundAttachment='scroll';
+  }
+};
+
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -39,64 +60,54 @@ TxtType.prototype.tick = function() {
     }, delta);
 };
 
-window.onload = function() {
-    var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
-        }
-    }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
-};
-
-
 // When the user scrolls the page, execute function 
 window.onscroll = function() {progress()};
 
 function progress()
 {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
 }
 
 
-;(function(){
-    function id(v){return document.getElementById(v); }
-    function loadbar() {
-      var ovrl = id("overlay"),
-          prog = id("progress"),
-          stat = id("progstat"),
-          img = document.images,
-          c = 0;
-          tot = img.length;
-  
-      function imgLoaded(){
-        c += 1;
-        var perc = ((100/tot*c) << 0) +"%";
-        prog.style.width = perc;
-        stat.innerHTML = perc;
-        if(c===tot) return doneLoading();
-      }
-      function doneLoading(){
-        ovrl.style.opacity = 0;
-        setTimeout(function(){ 
-          ovrl.style.display = "none";
-        }, 1200);
-      }
-      for(var i=0; i<tot; i++) {
-        var tImg     = new Image();
-        tImg.onload  = imgLoaded;
-        tImg.onerror = imgLoaded;
-        tImg.src     = img[i].src;
-      }    
+;(function()
+{
+  function id(v){ return document.getElementById(v); }
+  function loadbar()
+  {
+    var ovrl = id("overlay"),
+    prog = id("progress"),
+    stat = id("progstat"),
+    img = document.images,
+    c = 0;
+    tot = img.length;
+
+    function imgLoaded()
+    {
+      c += 1;
+      var perc = ((100/tot*c) << 0) +"%";
+      prog.style.width = perc;
+      stat.innerHTML = perc;
+      if(c===tot) return doneLoading();
     }
-    document.addEventListener('DOMContentLoaded', loadbar, false);
-  }());
+
+    function doneLoading()
+    {
+      ovrl.style.opacity = 0;
+      setTimeout(function()
+      { 
+        ovrl.style.display = "none";
+      }, 1200);
+    }
+    for(var i=0; i<tot; i++)
+    {
+      var tImg     = new Image();
+      tImg.onload  = imgLoaded;
+      tImg.onerror = imgLoaded;
+      tImg.src     = img[i].src;
+    }    
+  }
+  document.addEventListener('DOMContentLoaded', loadbar, false);
+}());
