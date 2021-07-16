@@ -15,6 +15,27 @@ body
     margin: 0;
 }
 
+::-webkit-scrollbar
+{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: #000; 
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #888;
+    border-radius: 50px; 
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background: #555; 
+}
+
 #overlay
 {
     position: fixed;
@@ -151,7 +172,6 @@ header
     /* border: 1px solid #fff; */
 }
 
-
 .card-c
 {
     text-align: center;
@@ -178,14 +198,17 @@ header
     background-color: #fff;
 }
 
-.h-title
-{
-    margin-top: 20px;
-}
-
 .intro ul
 {
     margin: 10px 20px;
+    font-size: inherit;
+}
+
+.intro p
+{
+    font-size: inherit;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .resume
@@ -387,6 +410,9 @@ header
     .tech{padding: 0;}
     .tech img{height: 70px; width: 70px; padding: 0;}
     .space{display: block;}
+    ::-webkit-scrollbar{ all: unset; }
+    ::-webkit-scrollbar-thumb{ all: unset; }
+    ::-webkit-scrollbar-thumb{ all: unset; }
     .carousel-inner .item img
     {
         height: 30vh;
@@ -428,6 +454,9 @@ header
     .tech{padding: 0;}
     .tech img{height: 70px; width: 70px; padding: 0;}
     .space{display: block;}
+    ::-webkit-scrollbar{ all: unset; }
+    ::-webkit-scrollbar-thumb{ all: unset; }
+    ::-webkit-scrollbar-thumb{ all: unset; }
     .github
     {
         background: -webkit-linear-gradient(#6cc644, #6cc644);
