@@ -147,14 +147,9 @@ header
     width: 0%;
 }
 
-.main
+.about
 {
     padding: 10px;
-}
-
-.main-dark
-{
-    background-color: #000;
 }
 
 .row
@@ -211,6 +206,22 @@ header
     text-justify: inter-word;
 }
 
+.intrests-c
+{
+    padding: 0;
+    margin: 0;
+}
+
+.intrests
+{
+    width: auto;
+    padding: 8px 16px;
+    margin: 3px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(85, 85, 85, 0.3);
+}
+
 .resume
 {
     background-color: transparent;
@@ -258,7 +269,7 @@ header
 
 .tech img:hover
 {
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #ccc;
 }
 
 .projectStack
