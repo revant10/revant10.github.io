@@ -13,6 +13,7 @@ body
     background: #111111;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 ::-webkit-scrollbar
@@ -123,8 +124,15 @@ header
     top: 0;
     border-radius: 0;
     z-index: 1000;
+    text-align: left;
+    max-width: 1200;
+    margin: 0 auto;
 }
 
+/* .container-fluid
+{
+    max-width: 1200px;
+} */
 .navbar-brand img
 {
     height: 2vw;
@@ -145,6 +153,13 @@ header
     height: inherit;
     background-image: linear-gradient(to right,#500, #a00, #f00);
     width: 0%;
+}
+
+#page-wrap, .container-fluid
+{
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto
 }
 
 .main
@@ -415,6 +430,28 @@ header
   100% { transform: translateY(0); opacity: 1;}
 }
 
+/* Media Queries */
+
+@media screen and (max-width: 1500px)
+{
+    #page-wrap, .container-fluid
+    {
+        max-width: 1000px;
+        text-align: left;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    #page-wrap, .container-fluid
+    {
+        max-width: 800px;
+        text-align: left;
+        margin: 0 auto;
+    }
+}
+
 @media screen and (max-width: 800px)
 {
     /* .name-h{font-size: 10vh;} */
@@ -455,6 +492,23 @@ header
         background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+
+    #page-wrap, .container-fluid
+    {
+        max-width: 600px;
+        text-align: left;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 650px)
+{
+    #page-wrap, .container-fluid
+    {
+        max-width: 600px;
+        text-align: left;
+        margin: 0 auto;
     }
 }
 
