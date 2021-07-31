@@ -155,7 +155,7 @@ header
     width: 0%;
 }
 
-#page-wrap, .container-fluid
+#page-wrap
 {
     text-align: left;
     max-width: 1200px;
@@ -434,7 +434,7 @@ header
 
 @media screen and (max-width: 1500px)
 {
-    #page-wrap, .container-fluid
+    #page-wrap
     {
         max-width: 1000px;
         text-align: left;
@@ -444,7 +444,7 @@ header
 
 @media screen and (max-width: 1200px)
 {
-    #page-wrap, .container-fluid
+    #page-wrap
     {
         max-width: 800px;
         text-align: left;
@@ -494,7 +494,7 @@ header
         -webkit-text-fill-color: transparent;
     }
 
-    #page-wrap, .container-fluid
+    #page-wrap
     {
         max-width: 600px;
         text-align: left;
@@ -504,7 +504,7 @@ header
 
 @media screen and (max-width: 650px)
 {
-    #page-wrap, .container-fluid
+    #page-wrap
     {
         max-width: 600px;
         text-align: left;
