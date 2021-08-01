@@ -252,12 +252,12 @@ header
 {
     height: 150px;
     width: 150px;
+    border-radius: 15px 15px 10px;
 }
 
 .badges:hover
 {
-    border-radius: 15px;
-    box-shadow: 0 0 10px #777, 0 0 5px #0f1; 
+    box-shadow: 0 0 10px #333, 0 0 5px #0f1; 
 }
 
 .techStack
@@ -286,7 +286,7 @@ header
 
 .tech img:hover
 {
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc, 0 0 10px #333;
 }
 
 .projectStack
