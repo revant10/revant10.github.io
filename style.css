@@ -175,7 +175,6 @@ header
 .card-c
 {
     text-align: center;
-    padding: 10px;
 }
 
 .about
@@ -196,6 +195,7 @@ header
     height: 20vw;
     width: 20vw;
     background-color: #fff;
+    margin: 0 auto;
 }
 
 .intro ul
@@ -246,6 +246,18 @@ header
 .fa-download
 {
     color: #285AEB;
+}
+
+.badges
+{
+    height: 150px;
+    width: 150px;
+}
+
+.badges:hover
+{
+    border-radius: 15px;
+    box-shadow: 0 0 10px #777, 0 0 5px #0f1; 
 }
 
 .techStack
@@ -415,6 +427,8 @@ header
   100% { transform: translateY(0); opacity: 1;}
 }
 
+/* Media Queries */
+
 @media screen and (max-width: 800px)
 {
     /* .name-h{font-size: 10vh;} */
@@ -422,7 +436,7 @@ header
     .navbar-brand img{height: 5vh; width: 5vh;}
     .nav li a{color: #fff;}
     .float-b, .float-b-d{height: 5vh; width: 5vh;}
-    .img-me{height: 20vh; width: 20vh;}
+    .img-me{height: 350px; width: 350px;}
     .tech{padding: 0;}
     .tech img{height: 70px; width: 70px; padding: 0;}
     .space{display: block;}
@@ -466,7 +480,8 @@ header
     .nav li a{color: #fff;}
     .float-b, .float-b-d{height: 5vh; width: 5vh;}
     .float-i, .float-i-d{font-size: 4vh;}
-    .img-me{height: 20vh; width: 20vh;}
+    .img-me{height: 200px; width: 200px;}
+    .badges{height: 100px; width: 100px;}
     .tech{padding: 0;}
     .tech img{height: 70px; width: 70px; padding: 0;}
     .space{display: block;}
