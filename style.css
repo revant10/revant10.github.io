@@ -190,7 +190,6 @@ header
 .card-c
 {
     text-align: center;
-    padding: 10px;
 }
 
 .about
@@ -304,7 +303,7 @@ header
 
 .tech img:hover
 {
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc, 0 0 10px #333;
 }
 
 .projectStack
@@ -584,6 +583,7 @@ header
     .float-b, .float-b-d{height: 5vh; width: 5vh;}
     .float-i, .float-i-d{font-size: 4vh;}
     .img-me{height: 200px; width: 200px;}
+    .badges{height: 100px; width: 100px;}
     .tech{padding: 0;}
     .tech img{height: 70px; width: 70px; padding: 0;}
     .space{display: block;}
