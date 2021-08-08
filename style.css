@@ -211,6 +211,7 @@ header
     height: 20vw;
     width: 20vw;
     background-color: #fff;
+    margin: 20px 0;
 }
 
 .intro ul
@@ -236,7 +237,7 @@ header
 {
     width: auto;
     padding: 8px 16px;
-    margin: 3px;
+    margin: 5px;
     text-align: center;
     border-radius: 5px;
     background-color: rgba(85, 85, 85, 0.3);
@@ -397,6 +398,7 @@ header
 .contact
 {
     background-color: transparent;
+    margin-bottom: 50px;
 }
 
 .c-title
@@ -492,6 +494,7 @@ header
 
 @media screen and (max-width: 1200px)
 {
+    .img-me{ height: 400px; width: 400px; }
     #page-wrap
     {
         max-width: 800px;
@@ -507,7 +510,7 @@ header
     .navbar-brand img{height: 5vh; width: 5vh;}
     .nav li a{color: #fff;}
     .float-b, .float-b-d{height: 5vh; width: 5vh;}
-    .img-me{height: 20vh; width: 20vh;}
+    .img-me{height: 350px; width: 350px;}
     .tech{padding: 0;}
     .tech img{height: 70px; width: 70px; padding: 0;}
     .space{display: block;}
@@ -568,7 +571,7 @@ header
     .nav li a{color: #fff;}
     .float-b, .float-b-d{height: 5vh; width: 5vh;}
     .float-i, .float-i-d{font-size: 4vh;}
-    .img-me{height: 20vh; width: 20vh;}
+    .img-me{height: 200px; width: 200px;}
     .tech{padding: 0;}
     .tech img{height: 70px; width: 70px; padding: 0;}
     .space{display: block;}
