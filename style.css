@@ -264,6 +264,18 @@ header
     color: #285AEB;
 }
 
+.badges
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 15px 15px 10px;
+}
+
+.badges:hover
+{
+    box-shadow: 0 0 10px #333, 0 0 5px #0f1; 
+}
+
 .techStack
 {
     padding: 20px 0px;
