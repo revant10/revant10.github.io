@@ -409,6 +409,7 @@ header
 .contact
 {
     background-color: transparent;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -450,6 +451,7 @@ header
 {
     text-align: center;
     font-size: 2em;
+    margin-top: 20px;
 }
 
 .social ul
