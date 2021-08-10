@@ -3,3 +3,4 @@ Disallow: /img/
 Disallow: /favicon/
 Disallow: /cert/
 Disallow: /tech/
+Disallow: /badges/
