@@ -263,16 +263,22 @@ header
     color: #285AEB;
 }
 
-.badges
+.Badge
 {
     height: 150px;
     width: 150px;
-    border-radius: 15px 15px 10px;
+    border-radius: 15px 15px 10px 10px;
+    margin: 5px 5px;
 }
 
-.badges:hover
+#b-green:hover
 {
-    box-shadow: 0 0 10px #333, 0 0 5px #0f1; 
+    box-shadow: 0 0 10px #333, 0 0 10px #0f1; 
+}
+
+#b-blue:hover
+{
+    box-shadow: 0 0 10px #333, 0 0 10px #55f; 
 }
 
 .techStack
@@ -526,6 +532,7 @@ header
     .img-me{height: 350px; width: 350px;}
     .tech{padding: 0;}
     .tech img{height: 70px; width: 70px; padding: 0;}
+    .badges{ text-align: center; }
     .space{display: block;}
     ::-webkit-scrollbar{ all: unset; }
     ::-webkit-scrollbar-thumb{ all: unset; }
@@ -585,7 +592,7 @@ header
     .float-b, .float-b-d{height: 5vh; width: 5vh;}
     .float-i, .float-i-d{font-size: 4vh;}
     .img-me{height: 200px; width: 200px;}
-    .badges{height: 100px; width: 100px;}
+    .Badge{height: 100px; width: 100px;}
     .tech{padding: 0;}
     .tech img{height: 70px; width: 70px; padding: 0;}
     .space{display: block;}
