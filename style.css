@@ -330,6 +330,18 @@ header
     margin-top: 5px;
 }
 
+.project-link
+{
+    text-align: center;
+}
+
+.project-link a
+{
+    text-decoration: underline;
+    color: inherit;
+    cursor: pointer;
+}
+
 .flip-card
 {
     background-color: transparent;
