@@ -111,3 +111,24 @@ function progress()
   }
   document.addEventListener('DOMContentLoaded', loadbar, false);
 }());
+
+// AngularJS Part
+var myApp = angular.module("myApp", []);
+
+// Controller for Tech
+myApp.controller("techController", function ($scope) {
+  $scope.technologies = [
+    {name: "HTML", link: "https://www.google.com/search?q=HTML", img: "tech/HTML.png"},
+    {name: "CSS", link: "https://www.google.com/search?q=CSS", img: "tech/CSS.png" },
+    {name: "JavaScript", link: "https://www.google.com/search?q=JavaScript", img: "tech/JavaScript.png"},
+    {name: "Python", link: "https://www.google.com/search?q=Python", img: "tech/Python.png"},
+    {name: "Ubuntu", link: "https://www.google.com/search?q=Ubuntu", img: "tech/Ubuntu.png"},
+    {name: "Linux", link: "https://www.google.com/search?q=Linux", img: "tech/Linux.png"},
+    {name: "Git", link: "https://www.google.com/search?q=Git",img: "tech/Git.png"},
+    {name: "GitHub", link: "https://www.google.com/search?q=GitHub", img: "tech/GitHub.png"},
+    {name: "MySQL", link: "https://www.google.com/search?q=MySQL", img: "tech/mySQL.png"},
+    {name: "Adobe Photoshop", link: "https://www.google.com/search?q=Adobe+Photoshop", img: "tech/PS.png"},
+    {name: "VS Code", link: "https://www.google.com/search?q=VS+Code", img: "tech/Code.png"},
+    {name: "Raspberry Pi", link: "https://www.google.com/search?q=Raspberry+Pi", img: "tech/rPi.png"}
+  ];
+});
