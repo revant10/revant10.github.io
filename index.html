@@ -306,19 +306,10 @@
                             </p>
                         </div>
         
-                        <div class="col-lg-4 col-md-12 col-xs-12 card-c social">
+                        <div class="col-lg-4 col-md-12 col-xs-12 card-c social" ng-controller="socialController">
                             <ul>
-                                <li>
-                                    <a href="https://www.instagram.com/revant.10/" target="_blank" rel="noreferrer">
-                                        <i class="fab fa-instagram insta"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/revantkansara/" target="_blank" rel="noreferrer">
-                                        <i class="fab fa-linkedin linkedin"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.github.com/revant10/" target="_blank" rel="noreferrer">
-                                        <i class="fab fa-github github"></i></a>
+                                <li ng-repeat="sm in socialMedia">
+                                    <a href="{{ sm.link }}" target="_blank" rel="noreferrer"><i class="{{ sm.class }}"></i></a>
                                 </li>
                             </ul>
                         </div>
