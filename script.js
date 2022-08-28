@@ -128,14 +128,14 @@ myApp.controller("techController", function ($scope) {
     {name: "GitHub", link: "https://www.google.com/search?q=GitHub", img: "tech/GitHub.png"},
     {name: "MySQL", link: "https://www.google.com/search?q=MySQL", img: "tech/mySQL.png"},
     {name: "Adobe Photoshop", link: "https://www.google.com/search?q=Adobe+Photoshop", img: "tech/PS.png"},
-    {name: "VS Code", link: "https://www.google.com/search?q=VS+Code", img: "tech/Code.png"},
+    {name: "C - Computer Programming Language", link: "https://www.google.com/search?q=C", img: "tech/C.png"},
     {name: "Raspberry Pi", link: "https://www.google.com/search?q=Raspberry+Pi", img: "tech/rPi.png"}
   ];
 });
 
 myApp.controller("socialController", function ($scope) {
   $scope.socialMedia = [
-    { link: "https://www.instagram.com/revant.10/", class: "fab fa-instagram insta"},
+    //{ link: "https://www.instagram.com/revant.10/", class: "fab fa-instagram insta"},
     { link: "https://www.linkedin.com/in/revantkansara/", class: "fab fa-linkedin linkedin"},
     { link: "https://www.github.com/revant10/", class: "fab fa-github github"}
   ];
