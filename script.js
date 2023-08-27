@@ -62,37 +62,37 @@ TxtType.prototype.tick = function() {
 
 
 // When the user scrolls the page, execute function 
-// window.onscroll = function() {progress()};
+window.onscroll = function() {progress()};
 
-// function progress()
-// {
-//   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-//   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-//   var scrolled = (winScroll / height) * 100;
-//   document.getElementById("myBar").style.width = scrolled + "%";
-// }
+function progress()
+{
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
 
 
-// ;(function()
-// {
-//   function id(v){ return document.getElementById(v); }
-//   function loadbar()
-//   {
-//     var ovrl = id("overlay"),
-//     prog = id("progress"),
-//     stat = id("progstat"),
-//     img = document.images,
-//     c = 0;
-//     tot = img.length;
+;(function()
+{
+  function id(v){ return document.getElementById(v); }
+  function loadbar()
+  {
+    var ovrl = id("overlay"),
+    prog = id("progress"),
+    stat = id("progstat"),
+    img = document.images,
+    c = 0;
+    tot = img.length;
 
-//     function imgLoaded()
-//     {
-//       c += 1;
-//       var perc = ((100/tot*c) << 0) +"%";
-//       prog.style.width = perc;
-//       stat.innerHTML = perc;
-//       if(c===tot) return doneLoading();
-//     }
+    function imgLoaded()
+    {
+      c += 1;
+      var perc = ((100/tot*c) << 0) +"%";
+      prog.style.width = perc;
+      stat.innerHTML = perc;
+      if(c===tot) return doneLoading();
+    }
 
     function doneLoading()
     {
