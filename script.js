@@ -135,7 +135,7 @@ myApp.controller("techController", function ($scope) {
 
 myApp.controller("socialController", function ($scope) {
   $scope.socialMedia = [
-    //{ link: "https://www.instagram.com/revant.10/", class: "fab fa-instagram insta"},
+    { link: "https://www.instagram.com/revant.10/", class: "fab fa-instagram insta"},
     { link: "https://www.linkedin.com/in/revantkansara/", class: "fab fa-linkedin linkedin"},
     { link: "https://www.github.com/revant10/", class: "fab fa-github github"}
   ];
